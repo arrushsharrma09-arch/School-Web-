@@ -1,0 +1,302 @@
+<!-- FINAL MERGED DASHBOARD WITH PROFILE + LOGIN SYSTEM -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School Web Dashboard</title>
+  <link href="https://cdn.discordapp.com/attachments/1335639250061754450/1441123651989667880/Gemini_Generated_Image_e9y18xe9y18xe9y1-removebg-preview.png?ex=6920a67d&is=691f54fd&hm=575cd2383118d0ce2d489d54f35ffd702b7c8fc91457675959cc18eeabb03048&" rel="stylesheet">
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:"Poppins",sans-serif;}
+    body{background:#e9f0ff;color:#222;}
+
+    header{
+      background:linear-gradient(135deg,#1a4ba3,#133b82);
+      padding:30px;color:white;text-align:center;position:relative;
+    }
+    #profileBtn{
+      position:absolute;top:20px;right:20px;background:white;color:#133b82;
+      padding:8px 14px;border-radius:8px;font-weight:600;text-decoration:none;
+    }
+    #profileBtn:hover{background:#dce6ff;}
+
+    nav{
+      display:flex;justify-content:center;gap:25px;background:#133b82;
+      padding:12px;position:sticky;top:0;z-index:100;
+    }
+    nav a{color:white;text-decoration:none;font-weight:600;}
+
+    section{padding:40px 20px;}
+    h2{margin-bottom:15px;color:#1a4ba3;}
+
+    .card{
+      background:white;padding:20px;margin:15px 0;border-radius:12px;
+      box-shadow:0 3px 12px rgba(0,0,0,0.1);
+    }
+
+    table{width:100%;border-collapse:collapse;margin-top:15px;background:#fff;border-radius:10px;overflow:hidden;}
+    th,td{padding:12px;text-align:center;border-bottom:1px solid #d6d6d6;}
+    th{background:#1a4ba3;color:white;}
+
+    .btn{display:inline-block;background:#1a4ba3;color:white;padding:10px 18px;border-radius:8px;text-decoration:none;margin-top:10px;}
+
+    footer{text-align:center;background:#1a4ba3;color:white;padding:15px;margin-top:20px;}
+
+    /* LOGIN OVERLAY */
+    #loginOverlay{
+      position:fixed;inset:0;display:flex;align-items:center;justify-content:center;
+      background:rgba(15,20,40,0.6);z-index:9999;
+    }
+    #loginBox{
+      width:360px;background:white;padding:24px;border-radius:12px;
+      box-shadow:0 10px 40px rgba(0,0,0,0.3);text-align:center;
+    }
+    #loginBox input{width:100%;margin-top:8px;padding:10px;border-radius:6px;border:1px solid #ccc;}
+  </style>
+</head>
+<body>
+
+  <!-- LOGIN OVERLAY -->
+  <div id="loginOverlay">
+    <div id="loginBox">
+      <h2>🔐 Student Login</h2>
+      <input id="roll" type="text" placeholder="Enter Id" />
+      <input id="pass" type="password" placeholder="Enter Password" />
+      <button id="loginBtn" class="btn" style="width:100%;margin-top:12px;">Login</button>
+      <div style="margin-top:10px;">Use ID: <b>GMSBV</b> & Password: <b>1105001</b></div>
+    </div>
+  </div>
+
+
+  <!-- MAIN DASHBOARD -->
+  <div id="app">
+
+    <header>
+      <a id="profileBtn" href="student_profile.html">👤 Student Profile</a>
+
+      <img src="https://cdn.discordapp.com/attachments/1335639250061754450/1441123651989667880/Gemini_Generated_Image_e9y18xe9y18xe9y1-removebg-preview.png?ex=6920a67d&is=691f54fd&hm=575cd2383118d0ce2d489d54f35ffd702b7c8fc91457675959cc18eeabb03048&" width="110" />
+      <h1>GANDHI MEMORIAL GOVT. S.B.V</h1>
+      <p><b>School Companion Web Portal</b></p>
+
+      
+    </header>
+
+    <nav>
+      <a href="#notices">Notices</a>
+      <a href="#timetable">Timetable</a>
+      <a href="#homework">Homework</a>
+      <a href="#materials">NoteBook Work</a>
+      <a href="#gallery">School Pics</a>
+      <a href="#contact">Teachers</a>
+      <a href="#form">Contact Form</a>
+    </nav>
+
+
+    <!-- NOTICES -->
+    <section id="notices">
+      <h2>📢 School Notices</h2>
+      <div class="card">Make It Project For Student Use!</div>
+      <div class="card">PTM → SOON! | </div>
+      <a class="btn" href="#">Download Full Notice PDF</a>
+    </section>
+
+<!-- TIMETABLE -->
+<section id="timetable">
+  <h2>🕒 Class Timetable</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td>Monday</td>
+        <td>Maths</td>
+        <td>Sanskrit</td>
+        <td>Maths</td>
+        <td>Sanskrit</td>
+        <td>Science</td>
+        <td>English</td>
+        <td>S.S.T</td>
+        <td>Hindi</td>
+      </tr>
+
+      <tr>
+        <td>Tuesday</td>
+        <td>Maths</td>
+        <td>Sanskrit</td>
+        <td>Library</td>
+        <td>Sanskrit</td>
+        <td>Science</td>
+        <td>English</td>
+        <td>S.S.T</td>
+        <td>Hindi</td>
+      </tr>
+
+      <tr>
+        <td>Wednesday</td>
+        <td>Maths</td>
+        <td>English</td>
+        <td>Maths</td>
+        <td>Sanskrit</td>
+        <td>Science</td>
+        <td>English</td>
+        <td>S.S.T</td>
+        <td>Hindi</td>
+      </tr>
+
+      <tr>
+        <td>Thursday</td>
+        <td>Maths</td>
+        <td>English</td>
+        <td>I.T</td>
+        <td>Sanskrit</td>
+        <td>Science</td>
+        <td>English</td>
+        <td>S.S.T</td>
+        <td>Hindi</td>
+      </tr>
+
+      <tr>
+        <td>Friday</td>
+        <td>Maths</td>
+        <td>S.S.T</td>
+        <td>I.T</td>
+        <td>Sanskrit</td>
+        <td>Science</td>
+        <td>English</td>
+        <td>S.S.T</td>
+        <td>Hindi</td>
+      </tr>
+
+      <tr>
+        <td>Saturday</td>
+        <td>Maths</td>
+        <td>S.S.T</td>
+        <td>I.T</td>
+        <td>Sanskrit</td>
+        <td>Science</td>
+        <td>English</td>
+        <td>S.S.T</td>
+        <td>Hindi</td>
+      </tr>
+
+    </tbody>
+  </table>
+</section>
+
+    <!-- HOMEWORK -->
+    <section id="homework">
+      <h2>📘 Homework</h2>
+      <div class="card">Maths – Chapter 5 Exercise 5.3</div>
+      <div class="card">Science – Read Chapter 8</div>
+    </section>
+
+
+    <!-- MATERIALS -->
+    <section id="materials">
+      <h2>📚 NoteBook Work</h2>
+      <div class="card">IT 9th Class – All Units</div>
+      <a class="btn" href="https://www.mediafire.com/file/kvztz780xj0ur4l/9th+class+it.pdf/file">Download All</a>
+    </section>
+
+
+    <!-- GALLERY -->
+    <section id="gallery">
+      <h2>🖼 School Gallery</h2>
+      <div class="card"><img src="https://cdn.discordapp.com/attachments/1335639250061754450/1441119499246895326/government-sarvodaya-bal-vidyalaya-gandhi-memorial-north-east-delhi-government-sarvodaya-bal-vidyalaya-gandhi-memorial-1.jpg?ex=6920a29f&is=691f511f&hm=07d8eb387ae476f47b2a8be20c4917977731e243f7e1a45c706b52dda9053ee5&" width="100%" /></div>
+      <div class="card"><img src="https://cdn.discordapp.com/attachments/1335639250061754450/1441119498781589635/government-sarvodaya-bal-vidyalaya-gandhi-memorial-north-east-delhi-government-sarvodaya-bal-vidyalaya-gandhi-memorial-4.jpg?ex=6920a29f&is=691f511f&hm=9915c9f5174fac7d47ab696e4e54c8afe70ddf93ebab86202fdab535fc5160af&" width="100%" /></div>
+    </section>
+
+
+    <!-- TEACHERS NAMES -->
+    <section id="contact">
+      <h2>👨‍🏫 Teachers</h2>
+      <div class="card">Pradeep Rana – Maths</div>
+      <div class="card">Bholanath Pandey – Sanskrit</div>
+      <div class="card">Madhur Gupta – IT</div>
+      <div class="card">Vaishnavi Sharma – Science</div>
+      <div class="card">Seema Gupta – English</div>
+      <div class="card">Abhishek Tripathi – Social Science</div>
+      <div class="card">Indramani Chaurasiya – Hindi</div>
+    </section>
+
+
+    <!-- CONTACT FORM -->
+    <section id="form">
+      <h2>✉ Contact Form</h2>
+      <div class="card">
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea rows="4" placeholder="Your Message"></textarea>
+          <button class="btn" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+
+    <footer>© 2025 GANDHI MEMORIAL GOVT.S.B.V</footer>
+
+  </div>
+
+
+<script>
+  const DEMO_ROLL = "GMSBV";
+  const DEMO_PASS = "1105001";
+
+  function login(){
+    let r = document.getElementById("roll").value.trim();
+    let p = document.getElementById("pass").value.trim();
+
+    if(r === DEMO_ROLL && p === DEMO_PASS){
+      sessionStorage.setItem("loggedIn", "true");
+      document.getElementById("loginOverlay").style.display = "none";
+    } else alert("Invalid Roll or Password");
+  }
+
+  document.getElementById("loginBtn").onclick = login;
+
+  // Hide login box if already logged in
+  if (sessionStorage.getItem("loggedIn") === "true") {
+      document.getElementById("loginOverlay").style.display = "none";
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  emailjs.init("PPJZ3d6WZ7PAkVc_m");
+
+  document.querySelector("#form form").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let userName = this.querySelector('input[type="text"]').value;
+    let userEmail = this.querySelector('input[type="email"]').value;
+    let userMessage = this.querySelector('textarea').value;
+
+    emailjs.send("service_0b7zbaf", "template_qrdhwds", {
+      name: userName,
+      email: userEmail,
+      message: userMessage
+    }).then(() => {
+      alert("Message Sent Successfully!");
+      this.reset();
+    }).catch(() => {
+      alert("Failed to send message. Try again.");
+    });
+  });
+</script>
+</body>
+</html>
